@@ -3,12 +3,12 @@ go
 
 alter proc usp_UpdateBalance
 (
- @ACID		int	
-,@BRID		char(3)
+ @ACID		char	
+,@BRID		int(3)
 ,@TXNTYPE	char(3)
 ,@CHQNO		int
 ,@CHQDATE	smalldatetime
-,@TXNAMT	money
+,@TXNAMT	smallmoney
 ,@UID		int	
 )
 as
